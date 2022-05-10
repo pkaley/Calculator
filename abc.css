@@ -1,0 +1,87 @@
+
+html {
+  box-sizing: border-box;
+} 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+input,
+textarea,
+button {
+  border: solid;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+  text-align: left;
+}
+
+:root {
+  font-family:'Times New Roman', Times, serif;
+}
+
+html {
+  font-size: 175%;
+  font-weight: 100;
+  line-height: 1;
+}
+
+body { 
+    background-color:#999;
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.container {
+  max-width: 21rem;
+}
+
+.calculator {
+  border:solid;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  max-width: 15rem;
+
+}
+
+.calculator__display {
+  background-color: black;
+  color: #fff;
+  font-size: 2rem;
+  padding-block-start: .5rem;
+  padding-block-end: .5rem;
+  padding-inline-end: .75rem;
+  text-align: end;
+}
+
+.calculator__keys {
+  background-color: #999;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.calculator__keys > * {
+  background-color: skyblue;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+.operator_key {
+  background-color: yellowgreen;
+}
+
+.equal_key {
+  background-color: darkorange;
+  grid-column: -2;
+  grid-row: 2/ span 4;
+}
